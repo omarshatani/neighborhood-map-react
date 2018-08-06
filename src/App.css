@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  widows: 100%;
 }
 
 .App-logo {
@@ -20,6 +20,31 @@
 
 .App-intro {
   font-size: large;
+}
+
+#map {
+  bottom: 0px;
+  height: 100%;
+  width: 75%;
+  position: absolute;
+  right: 0px;
+}
+
+.List {
+  width: 25%;
+  min-height: 100vh;
+  padding: 10px;
+  -webkit-box-shadow: -6px 9px 15px -4px rgba(84,83,84,0.56);
+  -moz-box-shadow: -6px 9px 15px -4px rgba(84,83,84,0.56);
+  box-shadow: -6px 9px 15px -4px rgba(84,83,84,0.56);
+}
+
+#locations {
+  padding: 0;
+}
+
+#locations li {
+  list-style: none;
 }
 
 @keyframes App-logo-spin {
