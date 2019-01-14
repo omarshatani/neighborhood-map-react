@@ -22,6 +22,11 @@ class App extends Component {
  * and adds them in the locations array
  */
   componentWillMount() {
+
+    axios.get('http://localhost:3000/api/courses')
+    .then(response => console.log(response))
+    .catch(error => console.log(error))
+
     axios.get('https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search', {
       headers: {'Authorization': 'Bearer Mk1W8GWMoNujHkUFq9LAq6FDWvSIkX2pPkQUx02oxxpEY7gNaQ4nx4IIPoQ9c9qJk99wwoW-cxh4v0vEPMX5GRxUIK-zxe9A4Yh7QB-hX3eAyagAa8m_hKkc00loW3Yx'},
       params: {

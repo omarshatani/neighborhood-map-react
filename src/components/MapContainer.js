@@ -45,12 +45,12 @@ export class MapContainer extends Component {
     if (infowindow.marker !== marker && marker.visible) {
       infowindow.marker = marker;
       infowindow.setContent(`
-        <div style="width:300px;text-align:center">
+        <div class="infoWindow">
          <h3>${location.name}</h3>
          <img 
           src="${location.image_url ? location.image_url : 'https://uploads-ssl.webflow.com/57e5747bd0ac813956df4e96/5aebae14c6d254621d81f826_placeholder.png'}" 
           alt="${location.name}" 
-          style="width:100%; max-height:300px"
+          class="infoWindow"
           />
          <h4>Phone Number: ${location.display_phone ? location.display_phone : 'Not available'}</h4>
          <h4>Rating: ${location.rating}/5</h4>
